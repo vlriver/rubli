@@ -55,6 +55,8 @@ function checkDeclension(num,currency) {
     }
 
     num = Math.abs(num);
+    num=Math.ceil(num);
+
 
     let text;
     const lastDigit = num % 10;
