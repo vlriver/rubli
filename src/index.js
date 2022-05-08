@@ -80,7 +80,7 @@ function checkDeclension(num,currency) {
         if (currency === 'рубли') {currency="рубля"}
         if (currency === 'гривны') {currency="гривны"}
         if (currency === 'злотые') {currency="злотых"}
-        text = `есть ${num} ${currency} рубля?`;
+        text = `есть ${num} ${currency} ?`;
     } else {
         text = `есть ${num} ${currency}?`;
     }
