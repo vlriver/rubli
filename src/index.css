@@ -1,0 +1,19 @@
+@import url('./styles/themes/themes.css');
+
+@import url('./styles/body/body.css');
+
+@import url('./styles/header/header.css');
+@import url('./styles/header/__title/header__title.css');
+
+@import url('./styles/main/main.css');
+@import url('./styles/main/__container/main__container.css');
+@import url('./styles/main/__buttons/__icons/main__buttons__icons.css');
+
+@import url('./styles/canvas/canvas.css');
+
+@import url('./styles/button/button.css');
+@import url('./styles/button/__icon/button__icon.css');
+
+@import url('./styles/input/input.css');
+
+@import url('./styles/footer/footer.css');
