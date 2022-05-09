@@ -51,37 +51,47 @@ function checkDeclension(num,currency) {
         if (currency === 'рубли') {currency="рублей"}
         if (currency === 'гривны') {currency="гривен"}
         if (currency === 'злотые') {currency="злотых"}
+        if (currency === 'шекели') {currency="шекелей"}
+        if (currency === 'лиры') {currency="лир"}
         return 'есть дохуя ' + currency +'?';
     }
 
     num = Math.abs(num);
     num=Math.ceil(num);
 
-
     let text;
     const lastDigit = num % 10;
     const twoLastDigits = num % 100;
-
     if (
         (lastDigit === 0 && num) ||
         (lastDigit > 4 && lastDigit < 10) ||
         (num > 9 && num < 20) ||
         (twoLastDigits > 10 && twoLastDigits < 15) ||
-        (num === 0)
+        (num === 0) || (num > 1 && num!==0)
     ) {
         if (currency === 'рубли') {currency="рублей"}
         if (currency === 'гривны') {currency="гривен"}
         if (currency === 'злотые') {currency="злотых"}
+        if (currency === 'шекели') {currency="шекелей"}
+        if (currency === 'лиры') {currency="лир"}
+
         text = `есть ${num} ${currency}?`;
     } else if (lastDigit === 1) {
         if (currency === 'рубли') {currency="рубль"}
         if (currency === 'гривны') {currency="гривна"}
         if (currency === 'злотые') {currency="злотая"}
+        if (currency === 'шекели') {currency="шекель"}
+        if (currency === 'лиры') {currency="лира"}
+
+
         text = `есть ${num} ${currency}?`;
     } else if (lastDigit > 1 && lastDigit < 5) {
         if (currency === 'рубли') {currency="рубля"}
         if (currency === 'гривны') {currency="гривны"}
         if (currency === 'злотые') {currency="злотых"}
+        if (currency === 'шекели') {currency="шекеля"}
+        if (currency === 'лиры') {currency="лир"}
+
         text = `есть ${num} ${currency} ?`;
     } else {
         text = `есть ${num} ${currency}?`;
